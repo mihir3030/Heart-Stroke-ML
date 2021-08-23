@@ -1,0 +1,156 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="materialize.css" media="screen,projection">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="..\static\styles\style4.css"> 
+</head>
+
+<body>
+  <h1>Stroke Risk Calculator</h1>
+  <h4>Please Enter the below values</h4>
+
+  <div class="row">
+    <form action= "/" method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="age">Age:</label>
+          <input name="age" id="age" type="text" pattern="[\d]+" class="validate">
+
+        </div>
+
+        <div class="input-field col s6">
+          <label for="bmi">Body mass index:</label>
+          <input name="bmi" id="bmi" type="text" pattern="[\d]+" class="validate">
+
+        </div>
+
+        <div class="input-field col s6">
+          <label for="avg_glucose_level">Avg glucose level:</label>
+          <input name="avg_glucose_level"  id="avg_glucose_level" type="text" pattern="[\d]+" class="validate">
+
+        </div>
+
+      </div> 
+
+   <div class= 'cont1'> 
+    <div class="input-field col s12">
+      <label>Smoking Status</label>
+          <select name="smoking" id="smoking" class='browser-default'>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Formally smoked</option>
+          <option value="2">Never Smoked</option>
+          <option value="3">Smokes</option>
+          <option value="4">Unknown</option>
+        </select><br>
+        
+    </div>
+
+    <div class="input-field col s12">
+     <label for="work">Work Type:</label>
+     <select name="work" id="workd" class='browser-default'>
+       <option value="" disabled selected>Choose your option</option>
+        <option value="1">Private</option>
+        <option value="2">Self-Employed</option>
+        <option value="3">Govt. job</option>
+        <option value="4">Children</option>
+        <option value="5">Never worked</option>
+      </select>
+    </div>
+
+    <div class="input-field col s12">
+        <label for="gender"><span>Gender:</span></label><br>
+        <p>
+        <label>
+            <input name="gender" type="radio" class="with-gap" checked value="1" />
+            <span>Male</span>
+        </label>
+        </p>
+        <p>
+        <label>
+            <input name="gender" type="radio" class="with-gap" value="0" />
+            <span>Female</span>
+        </label>
+        </p>
+    </div>
+
+    <div class="input-field col s12">
+        <label for="hypertension"><span>Hypertension:</span></label><br>
+        <p>
+        <label>
+            <input name="hypertension" type="radio" class="with-gap" checked value="1" />
+            <span>Yes</span>
+        </label>
+        </p>
+        <p>
+        <label>
+            <input name="hypertension" type="radio" class="with-gap" value="0" />
+            <span>No</span>
+        </label>
+        </p>
+    </div>
+
+  </div>
+  <div class='cont2'>
+    <div class="input-field col s12">
+        <label for="heartdisease"><span>Heart Disease:</span></label><br>
+        <p>
+        <label>
+            <input name="heartdisease" type="radio" class="with-gap" checked value="1" />
+            <span>Yes</span>
+        </label>
+        </p>
+        <p>
+        <label>
+            <input name="heartdisease" type="radio" class="with-gap" value="0" />
+            <span>No</span>
+        </label>
+        </p>
+    </div> 
+
+    <div class="input-field col s12">
+        <label for="married"><span>Ever Married:</span></label><br>
+        <p>
+        <label>
+            <input name="married" type="radio" class="with-gap" checked value="1" />
+            <span>Yes</span>
+        </label>
+        </p>
+        <p>
+        <label>
+            <input name="married" type="radio" class="with-gap" value="0" />
+            <span>No</span>
+        </label>
+        </p>
+    </div>
+
+    <div class="input-field col s12">
+        <label for="residence"><span>Residence Type:</span></label><br>
+        <p>
+        <label>
+            <input name="residence" type="radio" class="with-gap" checked value="1" />
+            <span>Urban</span>
+        </label>
+        </p>
+        <p>
+        <label>
+            <input name="residence" type="radio" class="with-gap" value="0" />
+            <span>Rural</span>
+        </label>
+        </p>
+    </div>
+
+  </div> 
+<br><br>
+      <button class="btn waves-effect waves-light input-field" type="submit">Submit<i class="material-icons right">send</i></button> 
+    </form>
+    <h3>
+      {{ pred }}
+    </h3>
+    
