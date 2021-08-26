@@ -80,7 +80,7 @@ heart-stroke-ml
 ├── requirements.txt
 ├── Procfile
 ├── Machine-Learning - Heart Stroke Predcition.ipynb
-├──modelpredict.pickle
+├── bst_model.pkl
 └── README.md
 ~~~
 
