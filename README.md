@@ -47,7 +47,7 @@
     <li>Create web app</li>
     <li>Deploy on webserver</li>
     </ul>
- 
+  ## :desktop_computer: Deploy - <a href = "https://heart-stroke.herokuapp.com/" target="/blank" style="color:blue;">Heroku</a>
  ## :gear: Setup
  1. First clone the repo locally.
  ```bash
