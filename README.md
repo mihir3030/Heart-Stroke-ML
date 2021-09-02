@@ -85,7 +85,7 @@ heart-stroke-ml
 ~~~
 
 
-## Contributors <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width=35 height=25>
+<!-- ## Contributors <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width=35 height=25>
 - Mihir Dholakiya<br><br>
-      <a href="https://www.linkedin.com/in/mihir-dholakia-362171162/" target="/blank"><img src="https://user-images.githubusercontent.com/45241759/130904923-143e3e99-02e3-47b5-935a-86fb1eb1476e.png" width=25, height=25></a>
+      <a href="https://www.linkedin.com/in/mihir-dholakia-362171162/" target="/blank"><img src="https://user-images.githubusercontent.com/45241759/130904923-143e3e99-02e3-47b5-935a-86fb1eb1476e.png" width=25, height=25></a> -->
    
